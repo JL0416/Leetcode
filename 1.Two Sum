@@ -1,0 +1,23 @@
+nums=[3,2,3]
+target=6    
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         print(nums[i],nums[j])
+#         if nums[i]+nums[j]==target:
+#             print(i,j)
+            
+# dict = {}
+# for i in range(len(nums)):
+#     a = target - nums[i]
+#     if a in dict:
+#        print(dict[a],i)
+#     else:
+#         dict[nums[i]] = i
+        
+dict = {}
+for i,v in enumerate(nums):
+    a = target - v
+    if a in dict:
+        print(dict[a],i)
+    else:
+        dict[v] = i
